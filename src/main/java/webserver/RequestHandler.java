@@ -32,7 +32,7 @@ public class RequestHandler extends Thread {
             }
 
             DataOutputStream dos = new DataOutputStream(out);
-            byte[] body = "Hello World".getBytes();
+            byte[] body = "Ubuntu Server of AWS".getBytes();
             response200Header(dos, body.length);
             responseBody(dos, body);
         } catch (IOException e) {
