@@ -1,18 +1,20 @@
 # 실습을 위한 개발 환경 세팅은 맨 아래를 참고하면 된다.
 * 이 프로젝트는 '**자바 웹 프로그래밍 Next Step**'을 학습하기 위한 Repository이다.
 * 이 책의 저자인 **박재성**님에게 감사의 말씀을 드리고싶다.
+---
 
 ### 요구사항 1 - http://localhost:8080/index.html로 접속시 응답
-* 
+* InputStream - InputStreamReader - BufferedReader.
+* readLine() 시 해당 행의 데이터를 보여주는 것을 확인했다.
 
 ### 요구사항 2 - get 방식으로 회원가입
-* 
+* 정규표현식 "?" 물음표 구분은 .*[\\?].*로 하면 된다.
 
 ### 요구사항 3 - post 방식으로 회원가입
-* 
+* 문자열 비교 시에는 .equals를 사용한다.
 
 ### 요구사항 4 - redirect 방식으로 이동
-* 
+* HTTP 302 응답을 통해 Redirect를 사용할 수 있다.
 
 ### 요구사항 5 - cookie
 * 
