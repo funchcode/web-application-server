@@ -5,6 +5,7 @@
 
 ### 요구사항 1 - http://localhost:8080/index.html로 접속시 응답
 * InputStream - InputStreamReader - BufferedReader.
+* BufferedReader에 charset을 설정한다.
 * readLine() 시 해당 행의 데이터를 보여주는 것을 확인했다.
 
 ### 요구사항 2 - get 방식으로 회원가입
