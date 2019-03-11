@@ -51,15 +51,19 @@ public class HttpRequest {
     private Boolean isGetMethod() {
         boolean isGet = false;
 
-        if(request.get("Request-Line").split(" ")[0].equals("GET")) {
+        if(getMethod().equals("GET")) {
             isGet = true;
         }
 
         return isGet;
     }
 
+    public String getMethod() {
+        return request.get("Request-Line").split(" ")[0];
+    }
+
     // url 가져오기.
-    public String getUrl() {
+    public String getPath() {
         String url = request.get("Request-Line").split(" ")[1];
         if(url.contains("?")) {
             url = url.split("\\?")[0];
